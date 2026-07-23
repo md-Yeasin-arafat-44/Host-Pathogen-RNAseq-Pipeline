@@ -1,0 +1,16 @@
+cff-version: 1.2.0
+title: Host-Pathogen-RNAseq-Pipeline
+message: "If you use this repository, please cite it."
+type: software
+
+authors:
+  - family-names: Arafat
+    given-names: Yeasin
+
+repository-code: https://github.com/md-Yeasin-arafat-44/Host-Pathogen-RNAseq-Pipeline
+
+license: MIT
+
+version: 1.0.0
+
+date-released: 2026-07-23

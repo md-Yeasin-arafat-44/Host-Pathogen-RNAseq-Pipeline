@@ -1,0 +1,37 @@
+# macOS
+.DS_Store
+
+# Logs
+*.log
+
+# BAM
+*.bam
+*.bai
+
+# FASTQ
+*.fastq
+*.fq
+*.fastq.gz
+*.fq.gz
+
+# Genome index
+*.idx
+
+# STAR temporary files
+*_STARtmp/
+
+# Kallisto binary
+abundance.h5
+
+# R
+.Rhistory
+.RData
+.Rproj.user/
+
+# Python
+__pycache__/
+*.pyc
+
+# Temporary
+tmp/
+temp/
