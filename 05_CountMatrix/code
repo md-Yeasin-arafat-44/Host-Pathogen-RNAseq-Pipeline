@@ -1,0 +1,44 @@
+%%R
+
+library(tximport)
+
+files <- c(
+  CRI1 = "CRI1_abundance.tsv",
+  CRI2 = "CRI2_abundance.tsv",
+  `CRI-3` = "CRI-3_abundance.tsv",
+  CRH1 = "CRH1_abundance.tsv",
+  CRH3 = "CRH3_abundance.tsv",
+  CHR2 = "CHR2_abundance.tsv"
+)
+
+txi <- tximport(
+  files,
+  type = "kallisto",
+  txOut = TRUE
+)
+
+%%R
+
+names(txi)
+
+%%R
+
+head(txi$counts)
+
+%%R
+
+head(txi$abundance)
+
+%%R
+
+write.csv(
+  txi$counts,
+  "counts_matrix.csv",
+  quote = FALSE
+)
+
+write.csv(
+  txi$abundance,
+  "TPM_matrix.csv",
+  quote = FALSE
+)
